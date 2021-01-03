@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,400"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/social-media.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Gasto Semanal</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="text-center">Gasto Semanal</h1>
+      </header>
+      <section class="contenido-principal">
+        <div class="row">
+          <div class="col">
+            <div class="contenido primario">
+              <h2 class="text-center">Añade tus gastos aqui</h2>
+              <form id="agregar-gasto" action="#">
+                <div class="form-group">
+                  <label for="gasto">Gasto:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="gasto"
+                    placeholder="Nombre Gasto"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="cantidad">Cantidad:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cantidad"
+                    placeholder="Cantidad en $"
+                  />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Agregar</button>
+              </form>
+            </div>
+            <!--.contenido-->
+          </div>
+          <!--.col-->
+
+          <div class="col">
+            <div class="contenido secundario">
+              <h2 class="text-center">Listado</h2>
+
+              <div id="gastos">
+                <ul class="list-group"></ul>
+              </div>
+              <div id="presupuesto" class="presupuesto">
+                <div class="alert alert-primary">
+                  <p>Presupuesto: $ <span id="total"></span></p>
+                </div>
+                <div class="restante alert alert-success">
+                  <p>Restante: $ <span id="restante"></span></p>
+                </div>
+              </div>
+              <!--.presupuesto-->
+            </div>
+            <!--.contenido-->
+          </div>
+          <!--.col-->
+        </div>
+        <!--.row-->
+      </section>
+    </div>
+
+    <!-- SOCIAL PANEL HTML -->
+    <div class="social-panel-container">
+      <div class="social-panel">
+        <p>
+          Created with <i class="fa fa-heart"></i>
+          by
+          <a target="_blank" href="#">JFZuniga</a>
+        </p>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <!-- <h4>Social Media</h4> -->
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/JomFelixZ"
+              target="_blank"
+              class="twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jfelixzuniga/"
+              target="_blank"
+              class="linkedin"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/JFelixZuniga"
+              target="_blank"
+              class="github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="floating-btn">Social Media</button>
+
+    <div class="floating-text">
+      <a
+        href="https://twitter.com/search?q=%23100DaysOfCode&src=typeahead_click"
+        target="_blank"
+        >#100DaysOfCode</a
+      >
+    </div>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/social-media.js"></script>
+  </body>
+</html>
